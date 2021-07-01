@@ -1,20 +1,49 @@
 .menu{
     display: flex;
     justify-content: space-between;
-    background-color:#000000;
+    background-color: black;
     padding: 15px;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: white;
 }
 body{
     margin: 0px;
     background-color:#f7f2f2;
     
 }
-
-
+a{
+    text-decoration: none;
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color:white;
+}
+.bodyimg{
+    position: relative;
+}
+.bodyimg p{
+    color:#f7f2f2;
+    font-size: 55px;
+    font-family: fantasy;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.bodyimg h1{
+    color:#f7f2f2;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 1600px;
+    position: absolute;
+    top:40%;
+    left:45%;
+    transform: translate(-40%, -40%);
+}
 .grid{
     display: flex;
     flex-wrap: wrap;
@@ -23,11 +52,11 @@ body{
     
 }
 .grid img{
-    border: 2px solid #000000;
+    border: 2px solid black;
     border-radius: 50px;
 }
 .origami {
-    transform: scale(1.2);
+    
     border-radius: 20px;
     background-color: #ffffff;
     padding: 30px;
@@ -36,51 +65,7 @@ body{
     font-family: fantasy;
     
 }
+.origami:hover{
 
-.bodyimg p,h1{
-    color: black;
-    font-style: italic ;
-}
-
-a:link{
-    color: white;
-}
-a:visited{
-    color: white;
-}
-
-.origami:hover {
     transform: scale(1.2);
-}
-
-.origami h3{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0;
-}
-
-.site-description {
-    justify-content: space-evenly;
-    text-align: center;
-    
-    color: white;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 5px;
-}
-
-.origami:hover h3{
-    opacity: 1;
-}
-
-.origami:hover img{
-    opacity: 0.33;
-}
-
-.origami img{
-    margin: 40px;
 }
